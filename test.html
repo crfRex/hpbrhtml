@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>侧边导航栏示例</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            padding-top: 20px;
+            transition: 0.3s;
+            overflow-x: hidden;
+        }
+
+        .sidenav a, .dropdown-btn {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #818181;
+            display: block;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover, .dropdown-btn:hover {
+            color: #f1f1f1;
+        }
+
+        .dropdown-container {
+            display: none;
+            background-color: #262626;
+            padding-left: 15px;
+        }
+
+        .dropdown-container a {
+            padding: 8px 15px;
+            text-decoration: none;
+            font-size: 16px;
+            color: #818181;
+            display: block;
+        }
+
+        .dropdown-container a:hover {
+            color: #f1f1f1;
+        }
+
+        .main {
+            margin-left: 260px; /* Same as the width of the sidenav */
+            padding: 20px;
+            transition: margin-left 0.3s;
+        }
+
+        .sidenav.collapsed {
+            width: 0;
+            padding-top: 0;
+        }
+
+        .sidenav.collapsed a, .sidenav.collapsed .dropdown-btn {
+            font-size: 0;
+            padding: 0;
+        }
+
+        .main.collapsed {
+            margin-left: 0;
+        }
+
+        .toggle-btn {
+            position: fixed;
+            top: 20px;
+            left: 260px;
+            font-size: 20px;
+            cursor: pointer;
+            z-index: 1;
+            transition: left 0.3s;
+        }
+
+        .toggle-btn.collapsed {
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidenav" id="sidenav">
+    <a href="#section1">Section 1</a>
+    <button class="dropdown-btn">Dropdown</button>
+    <div class="dropdown-container">
+        <a href="#subsection1">Subsection 1</a>
+        <a href="#subsection2">Subsection 2</a>
+        <a href="#subsection3">Subsection 3</a>
+    </div>
+    <a href="#section3">Section 3</a>
+    <a href="#section4">Section 4</a>
+</div>
+
+<div class="main" id="main">
+    <span class="toggle-btn" id="toggleBtn">&#9776;</span>
+    <h2>侧边导航栏示例</h2>
+    <p>这是一个带有侧边导航栏的示例页面。</p>
+    <h3 id="section1">Section 1</h3>
+    <p>内容...</p>
+    <h3 id="subsection1">Subsection 1</h3>
+    <p>内容...</p>
+    <h3 id="subsection2">Subsection 2</h3>
+    <p>内容...</p>
+    <h3 id="subsection3">Subsection 3</h3>
+    <p>内容...</p>
+    <h3 id="section3">Section 3</h3>
+    <p>内容...</p>
+    <h3 id="section4">Section 4</h3>
+    <p>内容...</p>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var dropdown = document.querySelectorAll('.dropdown-btn');
+        dropdown.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                this.classList.toggle('active');
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === 'block') {
+                    dropdownContent.style.display = 'none';
+                } else {
+                    dropdownContent.style.display = 'block';
+                }
+            });
+        });
+
+        var sidenav = document.getElementById('sidenav');
+        var main = document.getElementById('main');
+        var toggleBtn = document.getElementById('toggleBtn');
+
+        toggleBtn.addEventListener('click', function() {
+            sidenav.classList.toggle('collapsed');
+            main.classList.toggle('collapsed');
+            toggleBtn.classList.toggle('collapsed');
+        });
+    });
+</script>
+
+</body>
+</html>

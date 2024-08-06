@@ -2,7 +2,7 @@
     margin: 20px;
 }
 body{
-    background-color: #b6ffcf
+    background-color: #b6ffcf;
 }
 h1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -94,4 +94,96 @@ input{
 
 .image-container:hover .description {
     display: block;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #6eefb7;
+    padding-top: 20px;
+    transition: 0.3s;
+    overflow-x: hidden;
+}
+
+.sidenav a ,.dropdown-btn{
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #1fab89;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+.sidenav a:hover , .dropdown-btn:hover{
+    color: #d7fbe8;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: #6eefb7;
+    padding-left: 15px;
+}
+
+.dropdown-container a {
+    padding: 8px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    color: #1fab89;
+}
+
+.dropdown-container a:hover {
+    color: #d7fbe8;
+}
+
+.main {
+    margin-left: 290px; /* Same as the width of the sidenav */
+    padding: 20px;
+    transition: margin-left 0.3s;
+}
+
+button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sidenav.collapsed {
+    width: 0;
+    padding-top: 0;
+}
+
+.sidenav.collapsed a, .sidenav.collapsed .dropdown-btn {
+    font-size: 0;
+    padding: 0;
+}
+
+.main.collapsed {
+    margin-left: 0;
+}
+
+.toggle-btn {
+    color: #009667;
+    position: fixed;
+    top: 20px;
+    left: 300px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+    transition: left 0.3s;
+}
+
+.toggle-btn.collapsed {
+    left: 10px;
 }
