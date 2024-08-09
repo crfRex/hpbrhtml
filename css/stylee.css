@@ -187,3 +187,18 @@ button{
 .toggle-btn.collapsed {
     left: 10px;
 }
+
+.btn{
+    padding: 10px 20px;
+    background-color: #1fab89;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #16a085;
+}
