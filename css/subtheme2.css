@@ -2,22 +2,22 @@
     margin: 20px;
 }
 body{
-    background-color: #b6ffcf;
+    background-color: #ffd6ff;
 }
 h1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #15e297d8;
+    color: #a46ef6;
 }
 h2{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #7dffc2;
-    color: #11c180d8;
+    background-color: #c8b6ff;
+    color: #ad80f9;
 }
 h3{
     display: inline;
-    background-color: #9cfed1;
+    background-color: #e7c6ff;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #0e6b49d8;
+    color: #bb9bfc;
 }
 
 .date>i{
@@ -39,19 +39,19 @@ ul{
 }
 .man>i{
     display: inline;
-    background-color: #a4fff9;
+    background-color: #EDB8FF;
     font-size: 18px;
     font-weight: bolder;
     font-family: 'Courier New', Courier, monospace;
-    color: #3fc8b1;
+    color: #D485F3;
 }
 .gifts>b{
     display: inline;
-    background-color: #81fe81;
+    background-color: #ddbeff;
     font-size: 18px;
     font-weight: bolder;
     font-family: 'Courier New', Courier, monospace;
-    color: #19b55f;
+    color: #ce72f3;
 }
 
 a{
@@ -60,19 +60,19 @@ a{
 form{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
-    color: #0e6b49d8;
+    color: #9652FC;
 }
 input{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
-    color: #0e6b49d8;
+    color: #9652FC;
 }
 #hide{
-    color: #b6ffcf;
+    color: #ffd6ff;
 }
 #hide:hover{
-    background-color: #7dffc2;
-    color: #11c180d8;
+    background-color: #dfa9fb;
+    color: #ad80f9;
 }
 .image-container {
     position: relative;
@@ -85,8 +85,8 @@ input{
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #7dffc2;
-    color: #11c180d8;
+    background-color: #d3b5fe;
+    color: #5a316f;
     padding: 5px;
     width: 100%;
     text-align: center;
@@ -106,7 +106,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #6eefb7;
+    background-color: #e9b6fc;
     padding-top: 20px;
     transition: 0.3s;
     overflow-x: hidden;
@@ -116,7 +116,7 @@ body {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 18px;
-    color: #1fab89;
+    color: #8536fc;
     display: block;
     border: none;
     background: none;
@@ -128,12 +128,12 @@ body {
 }
 
 .sidenav a:hover , .dropdown-btn:hover{
-    color: #d7fbe8;
+    color: #d78cf7;
 }
 
 .dropdown-container {
     display: none;
-    background-color: #6eefb7;
+    background-color: #e9b6fc;
     padding-left: 15px;
 }
 
@@ -142,11 +142,11 @@ body {
     text-decoration: none;
     display: block;
     font-size: 16px;
-    color: #1fab89;
+    color: #8536fc;
 }
 
 .dropdown-container a:hover {
-    color: #d7fbe8;
+    color: #d78cf7;
 }
 
 .main {
@@ -174,7 +174,7 @@ button{
 }
 
 .toggle-btn {
-    color: #009667;
+    color: #d78cf7;
     position: fixed;
     top: 20px;
     left: 300px;
@@ -190,8 +190,8 @@ button{
 
 .btn{
     padding: 10px 20px;
-    background-color: #1fab89;
-    color: white;
+    background-color: #a771f2;
+    color: #ddbeff;
     border: none;
     cursor: pointer;
     font-size: 16px;
@@ -200,5 +200,10 @@ button{
 }
 
 .btn:hover {
-    background-color: #16a085;
+    background-color: #7b35d9;
+}
+
+hr{
+    border: 1px solid #d78cf7;
+    margin-bottom: 20px;
 }

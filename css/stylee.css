@@ -202,3 +202,8 @@ button{
 .btn:hover {
     background-color: #16a085;
 }
+
+hr{
+    border: 1px solid #1fab89;
+    margin-bottom: 20px;
+}

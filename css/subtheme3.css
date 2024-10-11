@@ -2,31 +2,31 @@
     margin: 20px;
 }
 body{
-    background-color: #b6ffcf;
+    background-color: #fcdac5;
 }
 h1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #15e297d8;
+    color: #bdb2ff;
 }
 h2{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #7dffc2;
-    color: #11c180d8;
+    background-color: #a0c4ff;
+    color: #9eddff;
 }
 h3{
     display: inline;
-    background-color: #9cfed1;
+    background-color: #9eddff;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #0e6b49d8;
+    color: #caffbf;
 }
 
 .date>i{
     display: inline;
-    background-color: #e8acfa;
+    background-color: #febbbb;
     font-size: 18px;
     font-weight: bolder;
     font-family: 'Courier New', Courier, monospace;
-    color: #845ec2;
+    color: #f6a31e;
 }
 
 p{
@@ -39,19 +39,19 @@ ul{
 }
 .man>i{
     display: inline;
-    background-color: #a4fff9;
+    background-color: #fdffc1;
     font-size: 18px;
     font-weight: bolder;
     font-family: 'Courier New', Courier, monospace;
-    color: #3fc8b1;
+    color: #a6fb95;
 }
 .gifts>b{
     display: inline;
-    background-color: #81fe81;
+    background-color: #ffd6a5;
     font-size: 18px;
     font-weight: bolder;
     font-family: 'Courier New', Courier, monospace;
-    color: #19b55f;
+    color: #ffadad;
 }
 
 a{
@@ -60,19 +60,19 @@ a{
 form{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
-    color: #0e6b49d8;
+    color: #f6a31e;
 }
 input{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
-    color: #0e6b49d8;
+    color: #f6a31e;
 }
 #hide{
-    color: #b6ffcf;
+    color: #fcdac5;
 }
 #hide:hover{
-    background-color: #7dffc2;
-    color: #11c180d8;
+    background-color: #bdb2ff;
+    color: #0056e0;
 }
 .image-container {
     position: relative;
@@ -85,8 +85,8 @@ input{
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #7dffc2;
-    color: #11c180d8;
+    background-color: #ff9b9b;
+    color: #ffb65c;
     padding: 5px;
     width: 100%;
     text-align: center;
@@ -106,7 +106,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #6eefb7;
+    background-color: #f8eeaa;
     padding-top: 20px;
     transition: 0.3s;
     overflow-x: hidden;
@@ -116,7 +116,7 @@ body {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 18px;
-    color: #1fab89;
+    color: #9ACE4B;
     display: block;
     border: none;
     background: none;
@@ -133,7 +133,7 @@ body {
 
 .dropdown-container {
     display: none;
-    background-color: #6eefb7;
+    background-color: #cce787;
     padding-left: 15px;
 }
 
@@ -142,7 +142,7 @@ body {
     text-decoration: none;
     display: block;
     font-size: 16px;
-    color: #1fab89;
+    color: #90beff;
 }
 
 .dropdown-container a:hover {
@@ -174,7 +174,7 @@ button{
 }
 
 .toggle-btn {
-    color: #009667;
+    color: #baadff;
     position: fixed;
     top: 20px;
     left: 300px;
@@ -190,7 +190,7 @@ button{
 
 .btn{
     padding: 10px 20px;
-    background-color: #1fab89;
+    background-color: #ff9b9b;
     color: white;
     border: none;
     cursor: pointer;
@@ -200,5 +200,10 @@ button{
 }
 
 .btn:hover {
-    background-color: #16a085;
+    background-color: #ff6c6c;
+}
+
+hr{
+    border: 1px solid #f8eeaa;
+    margin-bottom: 20px;
 }
