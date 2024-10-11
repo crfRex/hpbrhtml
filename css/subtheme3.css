@@ -207,3 +207,20 @@ hr{
     border: 1px solid #f8eeaa;
     margin-bottom: 20px;
 }
+
+.hidden-content {
+    display: none;
+}
+
+.fixed-button {
+    position: fixed;
+    top: 10px;
+    left: 320px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ff9b9b;
+    color: white;
+}

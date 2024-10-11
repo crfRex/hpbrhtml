@@ -210,6 +210,19 @@ button{
     display: none;
 }
 
+.fixed-button {
+    position: fixed;
+    top: 10px;
+    left: 320px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #6eefb7;
+    color: #1fab89;
+}
+
 hr{
     border: 1px solid #1fab89;
     margin-bottom: 20px;

@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy birthday Zuozuo!</title>
     <link id="themeStylesheet" rel="stylesheet" href="./css/stylee.css">
+    <link rel="icon" href="./pages/heart.png" type="image/x-icon">
 </head>
 <body>
+    <audio id="background-music" src="./pages/music.mp3" loop></audio>
     <div class="sidenav" id="sidenav">
         <a href="#section1">STH ABOUT THIS WEBSITE</a>
         <button class="dropdown-btn">DETAILED PROCESS</button>
@@ -31,6 +33,7 @@
     </div>
     <div class="main" id="main">
         <span class="toggle-btn" id="toggleBtn">&#9776;</span>
+        <button class="fixed-button" onclick="toggleMusic()">mu on</button>
         <h1>
             Happy Birthday!!!
         </h1>
@@ -42,7 +45,7 @@
         <button class="btn" onclick="changeCSS('./css/stylee.css')">Default Mint</button>
         <button class="btn" onclick="changeCSS('./css/subtheme1.css')">Sky Ocean</button>
         <button class="btn" onclick="changeCSS('./css/subtheme2.css')">Grape Plum</button>
-        <button class="btn" onclick="changeCSS('./css/subtheme3.css')">Sweety Rainbow</Ri:a></button>
+        <button class="btn" onclick="changeCSS('./css/subtheme3.css')">Sweety Rainbow</button>
         <h2 id="section1">
             STH ABOUT THIS WEBSITE
         </h2>
@@ -215,6 +218,11 @@
         <p>花了好久啊啊啊 生气我好笨</p>
         <p>然后就是尝试整了一下手机端 让他好看一点 现在感觉不开侧边栏的话还可以呢</p>
         <p>要是要用侧边栏的话再点开就好了宝宝</p>
+        <p>又加了一个网站图标！ 看起来不戳</p>
+        <p>右上角加了一个音乐播放按钮 是一首能比较表达我思念心情然后写这个的时候经常听的歌！</p>
+        <p>配合音乐食用本网站更佳喔 嘿嘿</p>
+        <p>我勒个豆啊刚才突然发现那个按钮在手机端看不见 服了</p>
+        <p>调了半个小时好不容易找到一个都相对满意一点的位置 辛苦我了哈哈哈哈哈</p>
         <p>最重要的是礼物部分啦</p>
         <p>把礼物的防提前看功能整好了 之后就是慢慢列慢慢买啦</p>
         <p>一百天真的过的挺快呢 不知不觉的我真的做了好多好多</p>
@@ -2467,6 +2475,24 @@
         document.getElementById('themeStylesheet').href = cssFile;
     }
 
+    function toggleMusic() {
+            var audio = document.getElementById('background-music');
+            var button = document.querySelector('.fixed-button');
+            if (audio.paused) {
+                audio.play();
+                button.textContent = 'mu off';
+            } else {
+                audio.pause();
+                button.textContent = 'mu on';
+            }
+    }
+
+    window.addEventListener('load', function() {
+            var audio = document.getElementById('background-music');
+            audio.play().catch(function(error) {
+                console.log('自动播放被阻止:', error);
+            });
+        });
 
     </script>
 
