@@ -3,27 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>跳转示例</title>
+    <title>密码保护内容</title>
     <style>
-        .btn {
-            padding: 10px 20px;
-            background-color: #1fab89;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .btn:hover {
-            background-color: #16a085;
+        .hidden-content {
+            display: none;
         }
     </style>
 </head>
 <body>
+    <button onclick="showContent()">点击查看内容</button>
 
-<a href="anotherpage.html" class="btn">跳转到另一个页面</a>
+    <div id="protected-content" class="hidden-content">
+        <p>照着教程很顺利的就做好啦，忍不住给朋友们炫耀了一下子<br>
+        <img src="pages/101.1.png" alt="101.1" width="300" height="200"><br>
+        要你看到还要挺久的呢，有一点遗憾<br>
+        但总归这个东西是给你的嘻嘻，所以也还好啦你总会看到的！<br>
+        总而言之今天还是很顺利的，不错不错<br>
+        就是这个小网站看起来太简陋啦希望以后会慢慢好起来吧！<br>
+        附带一个现在的样子：<br>
+        <img src="pages/101.2.png" alt="101.2"width="300" height="300"><br>
+        <b>爱你！</b>
+        </p>  
+        
+        <p class="date">
+            <i class="datee">
+                2024.7·28 100天
+            </i>
+        </p>
+        <p>
+            我就知道！不可能有这么顺利的呜呜:(<br>
+            本来昨晚上还好好的，然后今天突然就给我退款了<br>
+            我就感觉大事不妙啊，然后就去域名网站登陆看看<br>
+            结果账号就被锁了，发邮件给我让我解封<br>
+            啊啊啊好烦啊，就按照它提示的做<br>
+            提交身份证照片人家还不认，可能因为是外国网站吧<br>
+            然后我就翻箱倒柜翻出来护照，然后拍了照片提交<br>
+            无敌了希望明天可以好起来<br>
+            但是网页该写还是可以写的就是没办法及时更新了说是<br>
+            被这个事情整的今天也没写什么东西<br>
+            <b>祈祷祈祷一定要好！！</B>
+        </p>
+        
+        <p class="date">
+            <i class="datee">
+                2024.7·29 99天
+            </i>
+        </p>
+        <p>
+            <b>哈哈！解封了！</b><br>
+            我昨晚还额外给那个邮箱发了个求情的邮件<br>
+            就说什么给我女朋友准备礼物啊啥的希望一定要好<br>
+            哈哈你别说还挺管用的<br>
+            今天就解封了，然后我就赶紧把域名又重新买了一遍<br>
+            然后又走了一遍流程，这次应该就不会再不好了！<br>
+            <i><s>希望吧</s></i><br>
+            <img src="pages/99.1.png" alt="99.1"width=300 height="200"><br>    
+            然后讲一下正题！<br><br>
+            礼物现在就想是不是有一点点早呢你说<br>
+            但是现在刷到一些东西，觉得适合给你当礼物的我就已经开始不自觉地点收藏了<br>
+            到时候装一个超级大的礼物盒子，然后让你像寻宝一样慢慢拆吧<br>
+            但是应该也有很多可能后来会由于各种原因放弃吧，感觉有点可惜<br>
+            所以决定在后面列一个礼物清单，嘿嘿所有的想法都列进去，送不送再说<br>
+            到时候你有觉得不错但是我又没送的，你指出来我以后给你嘻嘻<br>
+        </p>
+    </div>
 
+    <script>
+        function showContent() {
+            var password = prompt("请输入密码:");
+            if (password === "your_password") { // 替换为你的密码
+                document.getElementById("protected-content").style.display = "block";
+            } else {
+                alert("密码错误！");
+            }
+        }
+    </script>
 </body>
 </html>
